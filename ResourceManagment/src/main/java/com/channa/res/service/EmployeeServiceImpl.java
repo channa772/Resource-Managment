@@ -1,5 +1,20 @@
 package com.channa.res.service;
 
-public class EmployeeServiceImpl {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.channa.res.dao.EmployeeDao;
+
+@Service
+public class EmployeeServiceImpl {
+	
+	@Autowired
+	EmployeeDao employeeDao;
+	
+	public void addEmployee() {
+		
+		
+		
+	}
+	
 }
