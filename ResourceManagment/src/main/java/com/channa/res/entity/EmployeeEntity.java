@@ -3,14 +3,24 @@ package com.channa.res.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name="employee")
 public class EmployeeEntity {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="employeeid")
 	private int employeeId;
+	@Column(name="employeename")
 	private String employeeName;
+	@Column(name="email")
 	private String email;
+	@Column(name="level")
 	private int level;
+	@Column(name="primaryskill")
 	private String primarySkill;
+	@Column(name="secondryskill")
 	private String secondrySkill;
+	@Column(name="location")
 	private String location;
 	
 	public EmployeeEntity() {
