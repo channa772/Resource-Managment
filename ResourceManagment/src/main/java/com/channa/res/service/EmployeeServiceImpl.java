@@ -18,7 +18,7 @@ public class EmployeeServiceImpl {
 		
 		EmployeeEntity employeeEntity = new EmployeeEntity();
 		BeanUtils.copyProperties(employeeBean, employeeEntity);
-		EmployeeEntity emp = employeeDao.save(employeeEntity);
+		EmployeeEntity emp =(EmployeeEntity) employeeDao.save(employeeEntity);
 		int empId = emp.getEmployeeId();
 		
 		return empId;

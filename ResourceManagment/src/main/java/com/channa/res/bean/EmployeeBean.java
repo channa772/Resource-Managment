@@ -1,7 +1,9 @@
 package com.channa.res.bean;
 
+import org.springframework.stereotype.Component;
 
-public abstract class EmployeeBean {
+@Component
+public class EmployeeBean {
 	
 	private int employeeId;
 	private String employeeName;
